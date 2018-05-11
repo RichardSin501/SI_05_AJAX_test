@@ -8,6 +8,11 @@ def hello_world():
     return render_template('index.html')
 
 
+@app.route('/get')
+def get():
+    return render_template('jquery-get.html')
+
+
 @app.route('/get-snippet')
 def get_snippet():
     return render_template('snippet.html', row_text="This is printed here with Jinja")
